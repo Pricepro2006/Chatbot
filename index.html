@@ -44,7 +44,7 @@ document.getElementById('imageUpload').addEventListener('change', async (event) 
   formData.append('image', file);
 
   try {
-    const response = await fetch('https://hardcover-rd-import-rv.trycloudflare.com' + endpoint, { ...
+    const response = await fetch('https://contacts-sports-save-heat.trycloudflare.com' + endpoint, { ...
       method: 'POST',
       body: formData
     });
@@ -71,7 +71,7 @@ async function sendMessage() {
   const question = userInput + (ocrExtract ? `\n${ocrExtract}` : '');
 
   try {
-    const response = await fetch('https://hardcover-rd-import-rv.trycloudflare.com' + endpoint, {
+    const response = await fetch('https://contacts-sports-save-heat.trycloudflare.com' + endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question, deal_id: dealIdInput })

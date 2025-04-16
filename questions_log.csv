@@ -17,6 +17,3 @@
 2025-04-14 19:20:53,How many parts with remaining qty greater than 100,Product number,multi_lookup,success
 2025-04-14 19:22:28,"Remaining qty for the parts 5TW13AA#ABA, 5TW10AA, 77T36AA#ABA",Product number,multi_lookup,success
 2025-04-14 19:26:22,"Remaining qty for the parts 5TW13AA#ABA, 5TW10AA, 77T36AA#ABA",Product number,multi_lookup,success
-2025-04-15 09:33:23,Who is the customer?,unknown,none,fail
-2025-04-15 09:33:43,How many 5TW10AA are remaining?,Remaining qty,multi_lookup,success
-2025-04-15 09:37:15,"How many 5TW10AA,5TW13AA and 53X27AA are remaining?",Remaining qty,multi_lookup,success

@@ -1,0 +1,12 @@
+# requirements.txt
+cryptography
+selenium
+webdriver-manager
+xlrd
+fastparquet       # optional second engine
+flask
+flask-cors
+pandas>=2.2       # parquet I/O fixes
+pyarrow>=15.0     # binary wheels for Win/mac/Linux
+openpyxl>=3.1
+tqdm>=4.66

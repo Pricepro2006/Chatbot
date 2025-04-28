@@ -1,1 +1,283 @@
-This is a placeholder for learned_synonyms.csv.
+Synonym,Field,Source,Timestamp
+valid until,End date,Seed,2025-04-21
+good through,End date,Seed,2025-04-21
+active until,End date,Seed,2025-04-21
+runs until,End date,Seed,2025-04-21
+closing date,End date,Seed,2025-04-21
+until when,End date,Seed,2025-04-21
+termination date,End date,Seed,2025-04-21
+deal owner,Customer,Seed,2025-04-21
+account name,Customer,Seed,2025-04-21
+who purchased,Customer,Seed,2025-04-21
+belongs to which client,Customer,Seed,2025-04-21
+assigned to whom,Customer,Seed,2025-04-21
+what's it going for,Dealer net price \n[USD],Seed,2025-04-21
+contract price,Dealer net price \n[USD],Seed,2025-04-21
+pricing on,Dealer net price \n[USD],Seed,2025-04-21
+quote amount,Dealer net price \n[USD],Seed,2025-04-21
+cost me,Dealer net price \n[USD],Seed,2025-04-21
+selling for,Dealer net price \n[USD],Seed,2025-04-21
+on hand,Remaining qty,Seed,2025-04-21
+in inventory,Remaining qty,Seed,2025-04-21
+stock level,Remaining qty,Seed,2025-04-21
+units available,Remaining qty,Seed,2025-04-21
+how much stock,Remaining qty,Seed,2025-04-21
+inventory count,Remaining qty,Seed,2025-04-21
+product line,Product family,Seed,2025-04-21
+series,Product family,Seed,2025-04-21
+device type,Product family,Seed,2025-04-21
+equipment category,Product family,Seed,2025-04-21
+product classification,Product family,Seed,2025-04-21
+model type,Product family,Seed,2025-04-21what's the price,"Dealer net price 
+[USD]",Seed,2025-04-21 21:30:12.120512
+how much is,"Dealer net price 
+[USD]",Seed,2025-04-21 21:30:12.120514
+what is the price of,"Dealer net price 
+[USD]",Seed,2025-04-21 21:30:12.120515
+net price,"Dealer net price 
+[USD]",Seed,2025-04-21 21:30:12.120516
+dealer price,"Dealer net price 
+[USD]",Seed,2025-04-21 21:30:12.120516
+cost of,"Dealer net price 
+[USD]",Seed,2025-04-21 21:30:12.120516
+how many left,Remaining qty,Seed,2025-04-21 21:30:12.120517
+remaining quantity,Remaining qty,Seed,2025-04-21 21:30:12.120517
+stock left,Remaining qty,Seed,2025-04-21 21:30:12.120518
+quantity remaining,Remaining qty,Seed,2025-04-21 21:30:12.120518
+what family is,Product family,Seed,2025-04-21 21:30:12.120519
+product type,Product family,Seed,2025-04-21 21:30:12.120519
+what kind of,Product family,Seed,2025-04-21 21:30:12.120520
+who is the customer,Customer,Seed,2025-04-21 21:30:12.120520
+end user,Customer,Seed,2025-04-21 21:30:12.120521
+when does it expire,End date,Seed,2025-04-21 21:30:12.120521
+expiration date,End date,Seed,2025-04-21 21:30:12.120522
+what's the price,"Dealer net price 
+[USD]",Seed,2025-04-21 21:30:21.020048
+how many do we have,Remaining qty,Seed,2025-04-22 07:31:20.265357
+quantity on hand,Remaining qty,Seed,2025-04-22 07:31:20.265358
+available inventory,Remaining qty,Seed,2025-04-22 07:31:20.265359
+count of,Remaining qty,Seed,2025-04-22 07:31:20.265359
+number of,Remaining qty,Seed,2025-04-22 07:31:20.265360
+inventory level,Remaining qty,Seed,2025-04-22 07:31:20.265360
+current stock,Remaining qty,Seed,2025-04-22 07:31:20.265361
+how many units,Remaining qty,Seed,2025-04-22 07:31:20.265361
+remaining balance,Remaining qty,Seed,2025-04-22 07:31:20.265362
+balance remaining,Remaining qty,Seed,2025-04-22 07:31:20.265362
+pieces left,Remaining qty,Seed,2025-04-22 07:31:20.265362
+stock count,Remaining qty,Seed,2025-04-22 07:31:20.265363
+availability,Remaining qty,Seed,2025-04-22 07:31:20.265363
+what type of,Product family,Seed,2025-04-22 07:31:20.265374
+who owns,Customer,Seed,2025-04-22 07:31:20.265376
+belongs to,Customer,Seed,2025-04-22 07:31:20.265376
+still in stock,Remaining qty,Seed,2025-04-23 15:11:50.421375
+units left,Remaining qty,Seed,2025-04-23 15:11:50.421375
+pieces remaining,Remaining qty,Seed,2025-04-23 15:11:50.421376
+how many still available,Remaining qty,Seed,2025-04-23 15:11:50.421376
+how many in inventory,Remaining qty,Seed,2025-04-23 15:11:50.421376
+price point,"Dealer net price 
+[USD]",Seed,2025-04-23 15:11:50.421380
+price per unit,"Dealer net price 
+[USD]",Seed,2025-04-23 15:11:50.421380
+unit price,"Dealer net price 
+[USD]",Seed,2025-04-23 15:11:50.421381
+cost per item,"Dealer net price 
+[USD]",Seed,2025-04-23 15:11:50.421381
+what does it cost,"Dealer net price 
+[USD]",Seed,2025-04-23 15:11:50.421381
+pricing for,"Dealer net price 
+[USD]",Seed,2025-04-23 15:11:50.421382
+quote for,"Dealer net price 
+[USD]",Seed,2025-04-23 15:11:50.421382
+quoted price,"Dealer net price 
+[USD]",Seed,2025-04-23 15:11:50.421383
+going for,"Dealer net price 
+[USD]",Seed,2025-04-23 15:11:50.421384
+product category,Product family,Seed,2025-04-23 15:11:50.421386
+model family,Product family,Seed,2025-04-23 15:11:50.421387
+equipment type,Product family,Seed,2025-04-23 15:11:50.421388
+item category,Product family,Seed,2025-04-23 15:11:50.421388
+device category,Product family,Seed,2025-04-23 15:11:50.421389
+product series,Product family,Seed,2025-04-23 15:11:50.421389
+what series is,Product family,Seed,2025-04-23 15:11:50.421390
+family of,Product family,Seed,2025-04-23 15:11:50.421390
+account holder,Customer,Seed,2025-04-23 15:11:50.421392
+customer name,Customer,Seed,2025-04-23 15:11:50.421393
+assigned to,Customer,Seed,2025-04-23 15:11:50.421393
+purchaser,Customer,Seed,2025-04-23 15:11:50.421394
+buyer name,Customer,Seed,2025-04-23 15:11:50.421394
+client account,Customer,Seed,2025-04-23 15:11:50.421395
+belongs to whom,Customer,Seed,2025-04-23 15:11:50.421396
+customer account,Customer,Seed,2025-04-23 15:11:50.421396
+who bought this,Customer,Seed,2025-04-23 15:11:50.421397
+purchased by,Customer,Seed,2025-04-23 15:11:50.421397
+client name,Customer,Seed,2025-04-23 15:11:50.421398
+valid through,End date,Seed,2025-04-23 15:11:50.421400
+good through date,End date,Seed,2025-04-23 15:11:50.421400
+date of expiration,End date,Seed,2025-04-23 15:11:50.421402
+expiry date,End date,Seed,2025-04-23 15:11:50.421402
+expires on,End date,Seed,2025-04-23 15:11:50.421402
+end of validity,End date,Seed,2025-04-23 15:11:50.421403
+when is it valid until,End date,Seed,2025-04-23 15:11:50.421404
+when does the deal end,End date,Seed,2025-04-23 15:11:50.421404
+assigned customer,Customer,GoldenBrain,2025-04-23 19:51:57.462725,100
+available quantity,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462740,100
+bd,Deal,GoldenBrain,2025-04-23 19:51:57.462746,100
+bd number,Deal,GoldenBrain,2025-04-23 19:51:57.462749,100
+bd#,Deal,GoldenBrain,2025-04-23 19:51:57.462753,100
+beginning date,Begin Date,GoldenBrain,2025-04-23 19:51:57.462756,100
+big deal,Deal,GoldenBrain,2025-04-23 19:51:57.462759,100
+big deal cost,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.462762,100
+big deal number,Deal,GoldenBrain,2025-04-23 19:51:57.462765,100
+big deal price,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.462768,100
+big deal#,Deal,GoldenBrain,2025-04-23 19:51:57.462775,100
+category,Product family,GoldenBrain,2025-04-23 19:51:57.462778,100
+client,Customer,GoldenBrain,2025-04-23 19:51:57.462781,100
+cost,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.462785,100
+current version,Version,GoldenBrain,2025-04-23 19:51:57.462788,100
+customer,Customer,GoldenBrain,2025-04-23 19:51:57.462791,100
+deal,DealBase,GoldenBrain,2025-04-23 19:51:57.462794,100
+deal #,Deal,GoldenBrain,2025-04-23 19:51:57.462796,100
+deal end,End Date,GoldenBrain,2025-04-23 19:51:57.462799,100
+deal number,Deal,GoldenBrain,2025-04-23 19:51:57.462802,100
+end client,Customer,GoldenBrain,2025-04-23 19:51:57.462805,100
+end customer,Customer,GoldenBrain,2025-04-23 19:51:57.462808,100
+end date,End Date,GoldenBrain,2025-04-23 19:51:57.462811,100
+ends on,End Date,GoldenBrain,2025-04-23 19:51:57.462814,100
+expiration,End Date,GoldenBrain,2025-04-23 19:51:57.462817,100
+expire,End Date,GoldenBrain,2025-04-23 19:51:57.462820,100
+expire date,End Date,GoldenBrain,2025-04-23 19:51:57.462823,100
+family,Product Family,GoldenBrain,2025-04-23 19:51:57.462826,100
+how many are on hand,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462829,100
+how much do we have,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462832,100
+latest version,Version,GoldenBrain,2025-04-23 19:51:57.462835,100
+left,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462838,100
+manufacturer part,Product number,GoldenBrain,2025-04-23 19:51:57.462840,100
+mfg part,Product number,GoldenBrain,2025-04-23 19:51:57.462843,100
+no longer valid,End Date,GoldenBrain,2025-04-23 19:51:57.462846,100
+open,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462849,100
+part,Product number,GoldenBrain,2025-04-23 19:51:57.462852,100
+part #,Product number,GoldenBrain,2025-04-23 19:51:57.462855,100
+part number,Product number,GoldenBrain,2025-04-23 19:51:57.462857,100
+part#,Product number,GoldenBrain,2025-04-23 19:51:57.462860,100
+partner,Customer,GoldenBrain,2025-04-23 19:51:57.462863,100
+parts,Product number,GoldenBrain,2025-04-23 19:51:57.462883,100
+po price,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.462885,100
+price,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.462888,100
+price each,Dealer Net Price,GoldenBrain,2025-04-23 19:51:57.462891,100
+printer type,Product Family,GoldenBrain,2025-04-23 19:51:57.462893,100
+product number,Product number,GoldenBrain,2025-04-23 19:51:57.462896,100
+qty,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462899,100
+qty left,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462902,100
+qty remaining,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462904,100
+quantity,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462907,100
+quantity left,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462910,100
+quantity leftover,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462912,100
+remaining,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462916,100
+remaining qty,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462918,100
+reseller cost,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.462921,100
+reseller price,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.462924,100
+show cost per unit,Dealer Net Price,GoldenBrain,2025-04-23 19:51:57.462927,100
+sku,Product number,GoldenBrain,2025-04-23 19:51:57.462930,100
+sku number,Product number,GoldenBrain,2025-04-23 19:51:57.462934,100
+sku#,Product number,GoldenBrain,2025-04-23 19:51:57.462937,100
+start,Begin Date,GoldenBrain,2025-04-23 19:51:57.462939,100
+start date,Begin Date,GoldenBrain,2025-04-23 19:51:57.462942,100
+stock,Remaining qty,GoldenBrain,2025-04-23 19:51:57.462944,100
+unit cost,Dealer Net Price,GoldenBrain,2025-04-23 19:51:57.462947,100
+v.,Version,GoldenBrain,2025-04-23 19:51:57.462950,100
+ver.,Version,GoldenBrain,2025-04-23 19:51:57.462952,100
+version,Version,GoldenBrain,2025-04-23 19:51:57.462955,100
+vpc,Product family,GoldenBrain,2025-04-23 19:51:57.462957,100
+vpl,Product family,GoldenBrain,2025-04-23 19:51:57.462960,100
+what kind of printer is this,Product Family,GoldenBrain,2025-04-23 19:51:57.462962,100
+who is buying?,Customer,GoldenBrain,2025-04-23 19:51:57.462966,100
+who owns the deal,Customer,GoldenBrain,2025-04-23 19:51:57.462969,100
+who's responsible for this deal,Customer,GoldenBrain,2025-04-23 19:51:57.462971,100
+who's the buyer?,Customer,GoldenBrain,2025-04-23 19:51:57.462975,100
+what type is,Product Family,GoldenBrain,2025-04-23 19:51:57.462977,100
+product family for,Product Family,GoldenBrain,2025-04-23 19:51:57.462980,100
+under what family,Product Family,GoldenBrain,2025-04-23 19:51:57.462984,100
+which family,Product Family,GoldenBrain,2025-04-23 19:51:57.462986,100
+what's the family,Product Family,GoldenBrain,2025-04-23 19:51:57.462989,100
+what category is,Product Family,GoldenBrain,2025-04-23 19:51:57.462992,100
+product class,Product Family,GoldenBrain,2025-04-23 19:51:57.462995,100
+what's the type,Product Family,GoldenBrain,2025-04-23 19:51:57.463001,100
+what series,Product Family,GoldenBrain,2025-04-23 19:51:57.463003,100
+what model series,Product Family,GoldenBrain,2025-04-23 19:51:57.463006,100
+which type,Product Family,GoldenBrain,2025-04-23 19:51:57.463009,100
+which series,Product Family,GoldenBrain,2025-04-23 19:51:57.463012,100
+what kind of product,Product Family,GoldenBrain,2025-04-23 19:51:57.463014,100
+net price of,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463017,100
+what's the price for,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463020,100
+what is the cost,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463022,100
+how much does it cost,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463025,100
+price of,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463028,100
+pricing details,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463032,100
+what's the cost,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463035,100
+how much for,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463038,100
+price quote,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463041,100
+quote price,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463043,100
+how much is it,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463046,100
+what price do we have,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463049,100
+price listed,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463052,100
+what's the rate,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463055,100
+cost information,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463058,100
+pricing information,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463061,100
+dealer cost,Dealer Net Price [USD],GoldenBrain,2025-04-23 19:51:57.463064,100
+units remaining,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463068,100
+available stock,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463070,100
+how many do you have,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463076,100
+what's the inventory,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463079,100
+what's the stock,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463082,100
+inventory status,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463085,100
+stock status,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463087,100
+how many in stock,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463090,100
+current inventory,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463093,100
+available units,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463095,100
+on-hand quantity,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463098,100
+quantity in stock,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463460,100
+do we have any,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463469,100
+how many do we have left,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463473,100
+units on hand,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463477,100
+stock quantity,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463480,100
+inventory available,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463483,100
+remaining number,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463486,100
+number remaining,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463489,100
+still available,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463492,100
+how many available,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463495,100
+supply level,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463498,100
+amount left,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463500,100
+amount remaining,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463503,100
+inventory on hand,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463506,100
+what's the qty,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463509,100
+items left,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463511,100
+pieces available,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463514,100
+available count,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463517,100
+what quantity,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463519,100
+how many items,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463522,100
+total inventory,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463525,100
+item count,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463527,100
+how many remain,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463530,100
+remain in stock,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463532,100
+how much inventory,Remaining qty,GoldenBrain,2025-04-23 19:51:57.463535,100
+for which customer,Customer,GoldenBrain,2025-04-23 19:51:57.463541,100
+which client,Customer,GoldenBrain,2025-04-23 19:51:57.463544,100
+who ordered,Customer,GoldenBrain,2025-04-23 19:51:57.463547,100
+customer on record,Customer,GoldenBrain,2025-04-23 19:51:57.463549,100
+purchasing entity,Customer,GoldenBrain,2025-04-23 19:51:57.463552,100
+company name,Customer,GoldenBrain,2025-04-23 19:51:57.463554,100
+buyer information,Customer,GoldenBrain,2025-04-23 19:51:57.463557,100
+client details,Customer,GoldenBrain,2025-04-23 19:51:57.463559,100
+when does it end,End Date,GoldenBrain,2025-04-23 19:51:57.463564,100
+end of deal,End Date,GoldenBrain,2025-04-23 19:51:57.463566,100
+until what date,End Date,GoldenBrain,2025-04-23 19:51:57.463569,100
+last date,End Date,GoldenBrain,2025-04-23 19:51:57.463572,100
+valid through date,End Date,GoldenBrain,2025-04-23 19:51:57.463575,100
+contract end,End Date,GoldenBrain,2025-04-23 19:51:57.463577,100
+deal expiration,End Date,GoldenBrain,2025-04-23 19:51:57.463580,100
+deal expires,End Date,GoldenBrain,2025-04-23 19:51:57.463583,100
+valid until when,End Date,GoldenBrain,2025-04-23 19:51:57.463585,100
+good until,End Date,GoldenBrain,2025-04-23 19:51:57.463588,100
+until which date,End Date,GoldenBrain,2025-04-23 19:51:57.463590,100
+End date,End date,Manual,2025-04-27T23:44:14.900398,100
+Product family,Product family,Manual,2025-04-27T23:45:54.532863,100

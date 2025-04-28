@@ -1,101 +1,166 @@
-# llm_interface.py — Enhanced with Fallback Synonym Detection via Mistral 7B + Logging + Auto-Apply
+"""llm_interface_v6_0.py – Unified LLM gateway (Ollama)
+Updated: 2025‑04‑24
 
-import requests
-import json
-import csv
-import os
-import pandas as pd
-
-OLLAMA_HOST = "http://localhost:11434"
-MODEL = "mistral"
-LEARNING_LOG = "learned_synonyms.csv"
-BRAIN_FILE = "variable_names.xlsx"
-
-# -- Log new fallback synonym pairs to CSV
-def log_fallback_synonym(question, field):
-    try:
-        with open(LEARNING_LOG, 'a', newline='', encoding='utf-8') as f:
-            writer = csv.writer(f)
-            writer.writerow([question.strip(), field.strip()])
-    except Exception as e:
-        pass  # Do not crash on logging failure
-
-# -- Load brain fields and generate prompt for field mapping
-def infer_intent(user_question):
-    try:
-        from brain_loader import load_synonym_brain
-        brain = load_synonym_brain(BRAIN_FILE)
-        known_fields = sorted(set(brain.values()))
-
-        field_prompt = f"""
-You are a field-matching assistant. Given a user's question, respond with the best matching field from this list:
-
-{', '.join(known_fields)}
-
-Only reply with the exact field name, no explanation.
-
-Question: "{user_question}"
+Changes from v5.1.0
+-------------------
+* Per‑model cold‑start timeout (Mixtral much slower to page into RAM)
+* Automatic one‑time "ping" warm‑up so the next real call is instant
+* Default timeout raised to 60 s (can always be overridden)
+* Public API (`get_mistral_suggestion`, `get_fields`) unchanged → no edits
+  required in the rest of the project.
 """
+from __future__ import annotations
 
-        response = requests.post(
-            f"{OLLAMA_HOST}/api/generate",
-            headers={"Content-Type": "application/json"},
-            data=json.dumps({"model": MODEL, "prompt": field_prompt, "stream": False})
-        )
-        if response.status_code == 200:
-            parsed = response.json()
-            guessed_field = parsed.get("response", "").strip()
-            if guessed_field in known_fields:
-                log_fallback_synonym(user_question, guessed_field)
-                return guessed_field
-        return "unknown"
-    except Exception:
-        return "unknown"
+import json, logging, re, requests
+from typing import List, Dict
 
-# -- Apply learned synonyms directly into variable_names.xlsx
-def apply_learned_synonyms():
+logger = logging.getLogger(__name__)
+logger.addHandler(logging.FileHandler("llm_interface_v6.log", encoding="utf‑8"))
+logger.setLevel(logging.INFO)
+
+VERSION = "6.0.1"
+OLLAMA_API = "http://localhost:11434/api/generate"
+
+# ---------------------------------------------------------------------------
+#  Model registry – you can add more Ollama tags here
+# ---------------------------------------------------------------------------
+MODEL_CONFIG: Dict[str, Dict] = {
+    "mistral": {
+        "name": "mistral",       # ollama tag
+        "context_length": 8192,
+        "preferred_for": ["short", "simple"],
+        "cold_start_timeout": 30,  # seconds
+    },
+    "openchat": {
+        "name": "openchat",
+        "context_length": 8192,
+        "preferred_for": ["conversational"],
+        "cold_start_timeout": 30,
+    },
+    "mixtral": {
+        "name": "mixtral",
+        "context_length": 32768,
+        "preferred_for": ["complex", "nuanced"],
+        "cold_start_timeout": 90,   # bigger model – empirically 2‑3× slower
+    },
+}
+DEFAULT_MODEL = "mistral"
+
+# Simple prompt templates (unchanged)
+PROMPT_TEMPLATES: Dict[str, str] = {
+    "mistral": (
+        "You are a synonym‑suggestion assistant. The user will give a natural "
+        "language question and you must return a JSON list of matching field "
+        "names. Return only these exact field names:\n"
+        "- \"Remaining qty\"\n- \"Dealer net price [USD]\"\n- \"Customer\"\n"
+        "- \"Product family\"\n- \"End date\"\n\nQuestion:\n\"{question}\""
+    ),
+    "openchat": (
+        "Determine which fields the user is asking about in: \"{question}\"\n"
+        "Return a JSON list, using exactly these field names: Remaining qty, Dealer net price [USD], Customer, Product family, End date."
+    ),
+    "mixtral": (
+        "Identify the fields referenced in the question (JSON array of objects with field + confidence 0‑100). Fields: Remaining qty, Dealer net price [USD], Customer, Product family, End date.\n\nQuestion: {question}"
+    ),
+}
+
+# ---------------------------------------------------------------------------
+#  Warm‑up helpers
+# ---------------------------------------------------------------------------
+_warmed_models: set[str] = set()
+
+def _warm_up_model(model: str) -> None:
+    """Ping the model once so subsequent calls are fast."""
+    if model in _warmed_models:
+        return
+    timeout = MODEL_CONFIG.get(model, {}).get("cold_start_timeout", 60)
     try:
-        if not os.path.exists(LEARNING_LOG) or not os.path.exists(BRAIN_FILE):
-            return
+        requests.post(
+            OLLAMA_API,
+            json={"model": model, "prompt": "ping", "stream": False},
+            timeout=timeout,
+        )
+        _warmed_models.add(model)
+        logger.debug("Warmed model %s", model)
+    except requests.exceptions.RequestException as exc:
+        logger.warning("Warm‑up for %s failed: %s", model, exc)
 
-        df_log = pd.read_csv(LEARNING_LOG, names=["Synonym", "Field"])
-        df_log.drop_duplicates(inplace=True)
+# ---------------------------------------------------------------------------
+#  Core call
+# ---------------------------------------------------------------------------
 
-        # Load brain file
-        brain_df = pd.read_excel(BRAIN_FILE, sheet_name=0)
-        brain_dict = {}
-        for _, row in brain_df.iterrows():
-            field = str(row[0]).strip()
-            for val in row[1:]:
-                if pd.notna(val):
-                    brain_dict[str(val).strip().lower()] = field
+def get_mistral_suggestion(question: str, model_name: str | None = None, *, timeout: int = 60) -> List[str]:
+    """Return a list of canonical fields suggested by the LLM."""
+    if not question:
+        return []
 
-        new_rows = []
-        for _, row in df_log.iterrows():
-            syn = str(row["Synonym"]).strip()
-            field = str(row["Field"]).strip()
-            if syn.lower() not in brain_dict:
-                new_rows.append((field, syn))
+    model_name = (model_name or DEFAULT_MODEL).lower()
+    if model_name not in MODEL_CONFIG:
+        logger.warning("Unknown model %s – falling back to %s", model_name, DEFAULT_MODEL)
+        model_name = DEFAULT_MODEL
 
-        if new_rows:
-            for field in sorted(set(r[0] for r in new_rows)):
-                existing_row = brain_df[brain_df.iloc[:, 0] == field]
-                if not existing_row.empty:
-                    index = existing_row.index[0]
-                    existing_values = set(str(v).strip().lower() for v in brain_df.loc[index, 1:].values if pd.notna(v))
-                    additions = [r[1] for r in new_rows if r[0] == field and r[1].lower() not in existing_values]
-                    for add in additions:
-                        for i in range(1, len(brain_df.columns)):
-                            if pd.isna(brain_df.iloc[index, i]):
-                                brain_df.iat[index, i] = add
-                                break
-                else:
-                    pads = [""] * (len(brain_df.columns) - 2)
-                    synonyms = [r[1] for r in new_rows if r[0] == field]
-                    brain_df.loc[len(brain_df)] = [field] + synonyms + pads
+    # Cold‑start warm‑up
+    _warm_up_model(model_name)
 
-            brain_df.to_excel(BRAIN_FILE, index=False)
-            print("✅ Brain file updated with new synonyms.")
+    prompt = PROMPT_TEMPLATES.get(model_name, PROMPT_TEMPLATES[DEFAULT_MODEL]).format(question=question)
 
-    except Exception as e:
-        print(f"❌ Failed to apply learned synonyms: {e}")
+    try:
+        r = requests.post(
+            OLLAMA_API,
+            json={"model": MODEL_CONFIG[model_name]["name"], "prompt": prompt, "stream": False},
+            timeout=timeout,
+        )
+        r.raise_for_status()
+        raw = r.json().get("response", "")
+    except requests.exceptions.RequestException as exc:
+        logger.error("LLM call failed (%s): %s", model_name, exc)
+        return []
+
+    # Extract JSON array
+    match = re.search(r"\[(.*?)\]", raw, re.DOTALL)
+    if not match:
+        # fall‑back: grab quoted strings
+        return re.findall(r'"([^"\]]+)"', raw)
+
+    snippet = "[" + match.group(1) + "]"
+    try:
+        data = json.loads(snippet)
+    except json.JSONDecodeError:
+        # if we expected array of objects (mixtral)
+        if model_name == "mixtral":
+            return re.findall(r"\"field\"\\s*:\\s*\"([^\"]+)\"", snippet)
+        return re.findall(r'"([^"\]]+)"', snippet)
+
+    if isinstance(data, list):
+        # Flatten list if it’s list[str] or list[dict]
+        if data and isinstance(data[0], dict):
+            # keep only fields with confidence ≥70 if present
+            return [item["field"] for item in data if item.get("confidence", 0) >= 70]
+        return [str(x) for x in data]
+    return []
+
+# ---------------------------------------------------------------------------
+#  High‑level convenience
+# ---------------------------------------------------------------------------
+
+def _auto_model(query: str) -> str:
+    """Quick rules – use mixtral for long/complex queries, openchat for conversational, else mistral."""
+    q = query.lower()
+    if any(k in q for k in (" and ", " with ", " including ")):
+        return "mixtral"
+    if any(k in q for k in ("could you", "would you", "please", "thank")):
+        return "openchat"
+    return "mistral"
+
+def get_fields(query: str, model_name: str | None = None, *, timeout: int = 60) -> List[str]:
+    model = model_name or _auto_model(query)
+    return get_mistral_suggestion(query, model, timeout=timeout)
+
+# ---------------------------------------------------------------------------
+#  CLI smoke test
+# ---------------------------------------------------------------------------
+if __name__ == "__main__":
+    print(f"LLM interface {VERSION}")
+    example = "What's the remaining qty for SKU123 in deal 12345678?"
+    print("Query:", example)
+    print("Detected fields:", get_fields(example))

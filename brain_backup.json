@@ -1,0 +1,905 @@
+{
+  "version": "5.0.0",
+  "timestamp": "2025-04-28T07:15:17.837147",
+  "sources": [
+    "Excel:8",
+    "LearnedCSV:171"
+  ],
+  "brain": {
+    "how much do we have": "Remaining qty",
+    "how many are on hand": "Remaining qty",
+    "available quantity": "Remaining qty",
+    "stock": "Remaining qty",
+    "client": "Customer",
+    "who owns the deal": "Customer",
+    "who's responsible for this deal": "Customer",
+    "assigned customer": "Customer",
+    "valid until": "End date",
+    "good through": "End date",
+    "active until": "End date",
+    "runs until": "End date",
+    "closing date": "End date",
+    "until when": "End date",
+    "termination date": "End date",
+    "deal owner": "Customer",
+    "account name": "Customer",
+    "who purchased": "Customer",
+    "belongs to which client": "Customer",
+    "assigned to whom": "Customer",
+    "on hand": "Remaining qty",
+    "in inventory": "Remaining qty",
+    "stock level": "Remaining qty",
+    "units available": "Remaining qty",
+    "how much stock": "Remaining qty",
+    "inventory count": "Remaining qty",
+    "product line": "Product family",
+    "series": "Product family",
+    "device type": "Product family",
+    "equipment category": "Product family",
+    "product classification": "Product family",
+    "model type": "Product family",
+    "how much is": "Dealer net price \n[USD]",
+    "what is the price of": "Dealer net price \n[USD]",
+    "net price": "Dealer net price \n[USD]",
+    "dealer price": "Dealer net price \n[USD]",
+    "cost of": "Dealer net price \n[USD]",
+    "how many left": "Remaining qty",
+    "remaining quantity": "Remaining qty",
+    "stock left": "Remaining qty",
+    "quantity remaining": "Remaining qty",
+    "what family is": "Product family",
+    "product type": "Product family",
+    "what kind of": "Product family",
+    "who is the customer": "Customer",
+    "end user": "Customer",
+    "when does it expire": "End date",
+    "expiration date": "End date",
+    "what's the price": "Dealer net price \n[USD]",
+    "how many do we have": "Remaining qty",
+    "quantity on hand": "Remaining qty",
+    "available inventory": "Remaining qty",
+    "count of": "Remaining qty",
+    "number of": "Remaining qty",
+    "inventory level": "Remaining qty",
+    "current stock": "Remaining qty",
+    "how many units": "Remaining qty",
+    "remaining balance": "Remaining qty",
+    "balance remaining": "Remaining qty",
+    "pieces left": "Remaining qty",
+    "stock count": "Remaining qty",
+    "availability": "Remaining qty",
+    "what type of": "Product family",
+    "who owns": "Customer",
+    "belongs to": "Customer",
+    "still in stock": "Remaining qty",
+    "units left": "Remaining qty",
+    "pieces remaining": "Remaining qty",
+    "how many still available": "Remaining qty",
+    "how many in inventory": "Remaining qty",
+    "price point": "Dealer net price \n[USD]",
+    "price per unit": "Dealer net price \n[USD]",
+    "unit price": "Dealer net price \n[USD]",
+    "cost per item": "Dealer net price \n[USD]",
+    "what does it cost": "Dealer net price \n[USD]",
+    "pricing for": "Dealer net price \n[USD]",
+    "quote for": "Dealer net price \n[USD]",
+    "quoted price": "Dealer net price \n[USD]",
+    "going for": "Dealer net price \n[USD]",
+    "product category": "Product family",
+    "model family": "Product family",
+    "equipment type": "Product family",
+    "item category": "Product family",
+    "device category": "Product family",
+    "product series": "Product family",
+    "what series is": "Product family",
+    "family of": "Product family",
+    "account holder": "Customer",
+    "customer name": "Customer",
+    "assigned to": "Customer",
+    "purchaser": "Customer",
+    "buyer name": "Customer",
+    "client account": "Customer",
+    "belongs to whom": "Customer",
+    "customer account": "Customer",
+    "who bought this": "Customer",
+    "purchased by": "Customer",
+    "client name": "Customer",
+    "valid through": "End date",
+    "good through date": "End date",
+    "date of expiration": "End date",
+    "expiry date": "End date",
+    "expires on": "End date",
+    "end of validity": "End date",
+    "when is it valid until": "End date",
+    "when does the deal end": "End date",
+    "category": "Product family",
+    "customer": "Customer",
+    "end client": "Customer",
+    "end customer": "Customer",
+    "left": "Remaining qty",
+    "open": "Remaining qty",
+    "partner": "Customer",
+    "qty": "Remaining qty",
+    "qty left": "Remaining qty",
+    "qty remaining": "Remaining qty",
+    "quantity": "Remaining qty",
+    "quantity left": "Remaining qty",
+    "quantity leftover": "Remaining qty",
+    "remaining": "Remaining qty",
+    "remaining qty": "Remaining qty",
+    "vpc": "Product family",
+    "vpl": "Product family",
+    "who is buying?": "Customer",
+    "who's the buyer?": "Customer",
+    "units remaining": "Remaining qty",
+    "available stock": "Remaining qty",
+    "how many do you have": "Remaining qty",
+    "what's the inventory": "Remaining qty",
+    "what's the stock": "Remaining qty",
+    "inventory status": "Remaining qty",
+    "stock status": "Remaining qty",
+    "how many in stock": "Remaining qty",
+    "current inventory": "Remaining qty",
+    "available units": "Remaining qty",
+    "on-hand quantity": "Remaining qty",
+    "quantity in stock": "Remaining qty",
+    "do we have any": "Remaining qty",
+    "how many do we have left": "Remaining qty",
+    "units on hand": "Remaining qty",
+    "stock quantity": "Remaining qty",
+    "inventory available": "Remaining qty",
+    "remaining number": "Remaining qty",
+    "number remaining": "Remaining qty",
+    "still available": "Remaining qty",
+    "how many available": "Remaining qty",
+    "supply level": "Remaining qty",
+    "amount left": "Remaining qty",
+    "amount remaining": "Remaining qty",
+    "inventory on hand": "Remaining qty",
+    "what's the qty": "Remaining qty",
+    "items left": "Remaining qty",
+    "pieces available": "Remaining qty",
+    "available count": "Remaining qty",
+    "what quantity": "Remaining qty",
+    "how many items": "Remaining qty",
+    "total inventory": "Remaining qty",
+    "item count": "Remaining qty",
+    "how many remain": "Remaining qty",
+    "remain in stock": "Remaining qty",
+    "how much inventory": "Remaining qty",
+    "for which customer": "Customer",
+    "which client": "Customer",
+    "who ordered": "Customer",
+    "customer on record": "Customer",
+    "purchasing entity": "Customer",
+    "company name": "Customer",
+    "buyer information": "Customer",
+    "client details": "Customer",
+    "end date": "End date",
+    "product family": "Product family"
+  },
+  "brain_sources": {
+    "Excel": [
+      [
+        "how much do we have",
+        "Remaining qty"
+      ],
+      [
+        "how many are on hand",
+        "Remaining qty"
+      ],
+      [
+        "available quantity",
+        "Remaining qty"
+      ],
+      [
+        "stock",
+        "Remaining qty"
+      ],
+      [
+        "client",
+        "Customer"
+      ],
+      [
+        "who owns the deal",
+        "Customer"
+      ],
+      [
+        "who's responsible for this deal",
+        "Customer"
+      ],
+      [
+        "assigned customer",
+        "Customer"
+      ]
+    ],
+    "LearnedCSV": [
+      [
+        "valid until",
+        "End date"
+      ],
+      [
+        "good through",
+        "End date"
+      ],
+      [
+        "active until",
+        "End date"
+      ],
+      [
+        "runs until",
+        "End date"
+      ],
+      [
+        "closing date",
+        "End date"
+      ],
+      [
+        "until when",
+        "End date"
+      ],
+      [
+        "termination date",
+        "End date"
+      ],
+      [
+        "deal owner",
+        "Customer"
+      ],
+      [
+        "account name",
+        "Customer"
+      ],
+      [
+        "who purchased",
+        "Customer"
+      ],
+      [
+        "belongs to which client",
+        "Customer"
+      ],
+      [
+        "assigned to whom",
+        "Customer"
+      ],
+      [
+        "on hand",
+        "Remaining qty"
+      ],
+      [
+        "in inventory",
+        "Remaining qty"
+      ],
+      [
+        "stock level",
+        "Remaining qty"
+      ],
+      [
+        "units available",
+        "Remaining qty"
+      ],
+      [
+        "how much stock",
+        "Remaining qty"
+      ],
+      [
+        "inventory count",
+        "Remaining qty"
+      ],
+      [
+        "product line",
+        "Product family"
+      ],
+      [
+        "series",
+        "Product family"
+      ],
+      [
+        "device type",
+        "Product family"
+      ],
+      [
+        "equipment category",
+        "Product family"
+      ],
+      [
+        "product classification",
+        "Product family"
+      ],
+      [
+        "model type",
+        "Product family"
+      ],
+      [
+        "how much is",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "what is the price of",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "net price",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "dealer price",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "cost of",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "how many left",
+        "Remaining qty"
+      ],
+      [
+        "remaining quantity",
+        "Remaining qty"
+      ],
+      [
+        "stock left",
+        "Remaining qty"
+      ],
+      [
+        "quantity remaining",
+        "Remaining qty"
+      ],
+      [
+        "what family is",
+        "Product family"
+      ],
+      [
+        "product type",
+        "Product family"
+      ],
+      [
+        "what kind of",
+        "Product family"
+      ],
+      [
+        "who is the customer",
+        "Customer"
+      ],
+      [
+        "end user",
+        "Customer"
+      ],
+      [
+        "when does it expire",
+        "End date"
+      ],
+      [
+        "expiration date",
+        "End date"
+      ],
+      [
+        "what's the price",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "how many do we have",
+        "Remaining qty"
+      ],
+      [
+        "quantity on hand",
+        "Remaining qty"
+      ],
+      [
+        "available inventory",
+        "Remaining qty"
+      ],
+      [
+        "count of",
+        "Remaining qty"
+      ],
+      [
+        "number of",
+        "Remaining qty"
+      ],
+      [
+        "inventory level",
+        "Remaining qty"
+      ],
+      [
+        "current stock",
+        "Remaining qty"
+      ],
+      [
+        "how many units",
+        "Remaining qty"
+      ],
+      [
+        "remaining balance",
+        "Remaining qty"
+      ],
+      [
+        "balance remaining",
+        "Remaining qty"
+      ],
+      [
+        "pieces left",
+        "Remaining qty"
+      ],
+      [
+        "stock count",
+        "Remaining qty"
+      ],
+      [
+        "availability",
+        "Remaining qty"
+      ],
+      [
+        "what type of",
+        "Product family"
+      ],
+      [
+        "who owns",
+        "Customer"
+      ],
+      [
+        "belongs to",
+        "Customer"
+      ],
+      [
+        "still in stock",
+        "Remaining qty"
+      ],
+      [
+        "units left",
+        "Remaining qty"
+      ],
+      [
+        "pieces remaining",
+        "Remaining qty"
+      ],
+      [
+        "how many still available",
+        "Remaining qty"
+      ],
+      [
+        "how many in inventory",
+        "Remaining qty"
+      ],
+      [
+        "price point",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "price per unit",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "unit price",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "cost per item",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "what does it cost",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "pricing for",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "quote for",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "quoted price",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "going for",
+        "Dealer net price \n[USD]"
+      ],
+      [
+        "product category",
+        "Product family"
+      ],
+      [
+        "model family",
+        "Product family"
+      ],
+      [
+        "equipment type",
+        "Product family"
+      ],
+      [
+        "item category",
+        "Product family"
+      ],
+      [
+        "device category",
+        "Product family"
+      ],
+      [
+        "product series",
+        "Product family"
+      ],
+      [
+        "what series is",
+        "Product family"
+      ],
+      [
+        "family of",
+        "Product family"
+      ],
+      [
+        "account holder",
+        "Customer"
+      ],
+      [
+        "customer name",
+        "Customer"
+      ],
+      [
+        "assigned to",
+        "Customer"
+      ],
+      [
+        "purchaser",
+        "Customer"
+      ],
+      [
+        "buyer name",
+        "Customer"
+      ],
+      [
+        "client account",
+        "Customer"
+      ],
+      [
+        "belongs to whom",
+        "Customer"
+      ],
+      [
+        "customer account",
+        "Customer"
+      ],
+      [
+        "who bought this",
+        "Customer"
+      ],
+      [
+        "purchased by",
+        "Customer"
+      ],
+      [
+        "client name",
+        "Customer"
+      ],
+      [
+        "valid through",
+        "End date"
+      ],
+      [
+        "good through date",
+        "End date"
+      ],
+      [
+        "date of expiration",
+        "End date"
+      ],
+      [
+        "expiry date",
+        "End date"
+      ],
+      [
+        "expires on",
+        "End date"
+      ],
+      [
+        "end of validity",
+        "End date"
+      ],
+      [
+        "when is it valid until",
+        "End date"
+      ],
+      [
+        "when does the deal end",
+        "End date"
+      ],
+      [
+        "assigned customer",
+        "Customer"
+      ],
+      [
+        "available quantity",
+        "Remaining qty"
+      ],
+      [
+        "category",
+        "Product family"
+      ],
+      [
+        "client",
+        "Customer"
+      ],
+      [
+        "customer",
+        "Customer"
+      ],
+      [
+        "end client",
+        "Customer"
+      ],
+      [
+        "end customer",
+        "Customer"
+      ],
+      [
+        "how many are on hand",
+        "Remaining qty"
+      ],
+      [
+        "how much do we have",
+        "Remaining qty"
+      ],
+      [
+        "left",
+        "Remaining qty"
+      ],
+      [
+        "open",
+        "Remaining qty"
+      ],
+      [
+        "partner",
+        "Customer"
+      ],
+      [
+        "qty",
+        "Remaining qty"
+      ],
+      [
+        "qty left",
+        "Remaining qty"
+      ],
+      [
+        "qty remaining",
+        "Remaining qty"
+      ],
+      [
+        "quantity",
+        "Remaining qty"
+      ],
+      [
+        "quantity left",
+        "Remaining qty"
+      ],
+      [
+        "quantity leftover",
+        "Remaining qty"
+      ],
+      [
+        "remaining",
+        "Remaining qty"
+      ],
+      [
+        "remaining qty",
+        "Remaining qty"
+      ],
+      [
+        "stock",
+        "Remaining qty"
+      ],
+      [
+        "vpc",
+        "Product family"
+      ],
+      [
+        "vpl",
+        "Product family"
+      ],
+      [
+        "who is buying?",
+        "Customer"
+      ],
+      [
+        "who owns the deal",
+        "Customer"
+      ],
+      [
+        "who's responsible for this deal",
+        "Customer"
+      ],
+      [
+        "who's the buyer?",
+        "Customer"
+      ],
+      [
+        "units remaining",
+        "Remaining qty"
+      ],
+      [
+        "available stock",
+        "Remaining qty"
+      ],
+      [
+        "how many do you have",
+        "Remaining qty"
+      ],
+      [
+        "what's the inventory",
+        "Remaining qty"
+      ],
+      [
+        "what's the stock",
+        "Remaining qty"
+      ],
+      [
+        "inventory status",
+        "Remaining qty"
+      ],
+      [
+        "stock status",
+        "Remaining qty"
+      ],
+      [
+        "how many in stock",
+        "Remaining qty"
+      ],
+      [
+        "current inventory",
+        "Remaining qty"
+      ],
+      [
+        "available units",
+        "Remaining qty"
+      ],
+      [
+        "on-hand quantity",
+        "Remaining qty"
+      ],
+      [
+        "quantity in stock",
+        "Remaining qty"
+      ],
+      [
+        "do we have any",
+        "Remaining qty"
+      ],
+      [
+        "how many do we have left",
+        "Remaining qty"
+      ],
+      [
+        "units on hand",
+        "Remaining qty"
+      ],
+      [
+        "stock quantity",
+        "Remaining qty"
+      ],
+      [
+        "inventory available",
+        "Remaining qty"
+      ],
+      [
+        "remaining number",
+        "Remaining qty"
+      ],
+      [
+        "number remaining",
+        "Remaining qty"
+      ],
+      [
+        "still available",
+        "Remaining qty"
+      ],
+      [
+        "how many available",
+        "Remaining qty"
+      ],
+      [
+        "supply level",
+        "Remaining qty"
+      ],
+      [
+        "amount left",
+        "Remaining qty"
+      ],
+      [
+        "amount remaining",
+        "Remaining qty"
+      ],
+      [
+        "inventory on hand",
+        "Remaining qty"
+      ],
+      [
+        "what's the qty",
+        "Remaining qty"
+      ],
+      [
+        "items left",
+        "Remaining qty"
+      ],
+      [
+        "pieces available",
+        "Remaining qty"
+      ],
+      [
+        "available count",
+        "Remaining qty"
+      ],
+      [
+        "what quantity",
+        "Remaining qty"
+      ],
+      [
+        "how many items",
+        "Remaining qty"
+      ],
+      [
+        "total inventory",
+        "Remaining qty"
+      ],
+      [
+        "item count",
+        "Remaining qty"
+      ],
+      [
+        "how many remain",
+        "Remaining qty"
+      ],
+      [
+        "remain in stock",
+        "Remaining qty"
+      ],
+      [
+        "how much inventory",
+        "Remaining qty"
+      ],
+      [
+        "for which customer",
+        "Customer"
+      ],
+      [
+        "which client",
+        "Customer"
+      ],
+      [
+        "who ordered",
+        "Customer"
+      ],
+      [
+        "customer on record",
+        "Customer"
+      ],
+      [
+        "purchasing entity",
+        "Customer"
+      ],
+      [
+        "company name",
+        "Customer"
+      ],
+      [
+        "buyer information",
+        "Customer"
+      ],
+      [
+        "client details",
+        "Customer"
+      ],
+      [
+        "end date",
+        "End date"
+      ],
+      [
+        "product family",
+        "Product family"
+      ]
+    ],
+    "CustomCSV": [],
+    "Seed": []
+  }
+}

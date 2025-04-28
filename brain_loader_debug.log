@@ -1,0 +1,189 @@
+Brain loaded at: 2025-04-28 07:15:17.850896
+Version: 5.0.0
+Total synonyms: 171
+Sources: Excel:8, LearnedCSV:171
+
+=== SYNONYM MAP ===
+
+--- Customer ---
+  account holder
+  account name
+  assigned customer
+  assigned to
+  assigned to whom
+  belongs to
+  belongs to which client
+  belongs to whom
+  buyer information
+  buyer name
+  client
+  client account
+  client details
+  client name
+  company name
+  customer
+  customer account
+  customer name
+  customer on record
+  deal owner
+  end client
+  end customer
+  end user
+  for which customer
+  partner
+  purchased by
+  purchaser
+  purchasing entity
+  which client
+  who bought this
+  who is buying?
+  who is the customer
+  who ordered
+  who owns
+  who owns the deal
+  who purchased
+  who's responsible for this deal
+  who's the buyer?
+
+--- Dealer net price 
+[USD] ---
+  cost of
+  cost per item
+  dealer price
+  going for
+  how much is
+  net price
+  price per unit
+  price point
+  pricing for
+  quote for
+  quoted price
+  unit price
+  what does it cost
+  what is the price of
+  what's the price
+
+--- End date ---
+  active until
+  closing date
+  date of expiration
+  end date
+  end of validity
+  expiration date
+  expires on
+  expiry date
+  good through
+  good through date
+  runs until
+  termination date
+  until when
+  valid through
+  valid until
+  when does it expire
+  when does the deal end
+  when is it valid until
+
+--- Product family ---
+  category
+  device category
+  device type
+  equipment category
+  equipment type
+  family of
+  item category
+  model family
+  model type
+  product category
+  product classification
+  product family
+  product line
+  product series
+  product type
+  series
+  vpc
+  vpl
+  what family is
+  what kind of
+  what series is
+  what type of
+
+--- Remaining qty ---
+  amount left
+  amount remaining
+  availability
+  available count
+  available inventory
+  available quantity
+  available stock
+  available units
+  balance remaining
+  count of
+  current inventory
+  current stock
+  do we have any
+  how many are on hand
+  how many available
+  how many do we have
+  how many do we have left
+  how many do you have
+  how many in inventory
+  how many in stock
+  how many items
+  how many left
+  how many remain
+  how many still available
+  how many units
+  how much do we have
+  how much inventory
+  how much stock
+  in inventory
+  inventory available
+  inventory count
+  inventory level
+  inventory on hand
+  inventory status
+  item count
+  items left
+  left
+  number of
+  number remaining
+  on hand
+  on-hand quantity
+  open
+  pieces available
+  pieces left
+  pieces remaining
+  qty
+  qty left
+  qty remaining
+  quantity
+  quantity in stock
+  quantity left
+  quantity leftover
+  quantity on hand
+  quantity remaining
+  remain in stock
+  remaining
+  remaining balance
+  remaining number
+  remaining qty
+  remaining quantity
+  still available
+  still in stock
+  stock
+  stock count
+  stock left
+  stock level
+  stock quantity
+  stock status
+  supply level
+  total inventory
+  units available
+  units left
+  units on hand
+  units remaining
+  what quantity
+  what's the inventory
+  what's the qty
+  what's the stock
+

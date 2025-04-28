@@ -1,0 +1,49 @@
+{
+  "version": "5.0.0",
+  "timestamp": "2025-04-28T07:15:17.851968",
+  "total_runtime": 11.810167,
+  "total_synonyms": 171,
+  "sources": {
+    "Excel": 8,
+    "LearnedCSV": 171,
+    "ProductFamily": 41
+  },
+  "load_times": {
+    "Excel": 0.06360864639282227,
+    "LearnedCSV": 0.0014142990112304688,
+    "ProductFamily": 0.008990049362182617
+  },
+  "field_totals": {
+    "Remaining qty": 82,
+    "Customer": 42,
+    "End date": 18,
+    "Product family": 22,
+    "Dealer net price \n[USD]": 15
+  },
+  "field_coverage": {
+    "Remaining qty": {
+      "Excel": 4,
+      "LearnedCSV": 78
+    },
+    "Customer": {
+      "Excel": 4,
+      "LearnedCSV": 38
+    },
+    "End date": {
+      "LearnedCSV": 18
+    },
+    "Product family": {
+      "LearnedCSV": 22
+    },
+    "Dealer net price \n[USD]": {
+      "LearnedCSV": 15
+    }
+  },
+  "error_count": 0,
+  "brain_sources": [
+    "Excel",
+    "LearnedCSV",
+    "CustomCSV",
+    "Seed"
+  ]
+}
